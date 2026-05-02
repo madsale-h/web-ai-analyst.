@@ -4,7 +4,7 @@ import plotly.express as px
 import google.generativeai as genai
 
 # 1. Masukkan API Key
-API_KEY = "AIzaSyBM68EZoH4L9IRmEmiKtvtx4J7R0XCRNXw"
+API_KEY = st.secrets["API_KEY"]
 
 genai.configure(api_key=API_KEY)
 model = genai.GenerativeModel('models/gemini-2.5-flash') 
